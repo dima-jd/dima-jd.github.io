@@ -2093,7 +2093,7 @@ textarea:focus:-ms-input-placeholder {opacity: 0; transition: opacity 0.3s ease;
     background-image: url("../images/portfolio-details-2-intro-bg.jpg");
 }
 .portfolio-details-2 #video-block {
-    background-image: url("../images/video-block-bg.jpg");
+    background-image: url("../store/img/bg-store.gif");
 }
 .portfolio-details-4 #main-image {
     background-image: url("../images/project-details-4-main-img.jpg");
