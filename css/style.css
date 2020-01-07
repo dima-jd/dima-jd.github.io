@@ -2089,10 +2089,10 @@ textarea:focus:-ms-input-placeholder {opacity: 0; transition: opacity 0.3s ease;
     background-image: url("../images/wireframes-bg.jpg");
     background-color: #87afbc;
 }
-.portfolio-details-2 #video-block {
+ #video-block {
     background-image: url("../images/portfolio-details-2-intro-bg.jpg");
 }
-.portfolio-details-2 #intro {
+ #intro {
     background-image: url("../store/img/bg-store.gif");
 }
 .portfolio-details-4 #main-image {
