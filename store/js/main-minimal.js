@@ -1,17 +1,3 @@
-/*
-* IQON - Fresh Coming Soon Template
-* Build Date: June 2016
-* Last Update: June 2016
-* Author: Madeon08
-* Copyright (C) 2016 Madeon08
-* This is a premium product available exclusively here : http://themeforest.net/user/Madeon08/portfolio
-*/
-
-/*  TABLE OF CONTENTS
-    ---------------------------
-    1. Loading / Opening
-    2. Newsletter
-*/
 
 /* ------------------------------------- */
 /* 1. Loading / Opening ................ */
@@ -52,13 +38,3 @@ $(window).load(function(){
 
 });
 
-$(document).ready(function(){
-    "use strict";
-
-    /* ------------------------------------- */
-    /* 2. Newsletter ....................... */
-    /* ------------------------------------- */
-
-    $("#notifyMe").notifyMe();
-
-});

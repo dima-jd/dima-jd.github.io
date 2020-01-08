@@ -1,57 +1,15 @@
-/*
-* IQON - Fresh Coming Soon Template
-* Build Date: June 2016
-* Last Update: June 2016
-* Author: Madeon08
-* Copyright (C) 2016 Madeon08
-* This is a premium product available exclusively here : http://themeforest.net/user/Madeon08/portfolio
-*/
-/*  TABLE OF CONTENTS
-    ---------------------------
-    *. @Import & Reset
-    *. Loading overlay
-    1. Generic styles
-    2. Home
-    3. Media Queries
-*/
-/* ------------------------------------- */
-/* *. @Import & Reset .................. */
-/* ------------------------------------- */
-/* http://bourbon.io/ Sass Mixin Library */
-/*
-* IQON - Fresh Coming Soon Template
-* Build Date: May 2016
-* Last Update: May 2016
-* Author: Madeon08
-* Copyright (C) 2016 Madeon08
-* This is a premium product available exclusively here : http://themeforest.net/user/Madeon08/portfolio
-*/
-/*
-* IQON - Fresh Coming Soon Template
-* Build Date: May 2016
-* Last Update: May 2016
-* Author: Madeon08
-* Copyright (C) 2016 Madeon08
-* This is a premium product available exclusively here : http://themeforest.net/user/Madeon08/portfolio
-*/
+
 /* custom CSS files */
 @import url(font-awesome.min.css);
 @import url(ionicons.min.css);
 @import url(bootstrap.min.css);
 @import url(animate.css);
-@import url(photoswipe.css);
-@import url(default-skin/default-skin.css);
-@import url(jquery.mCustomScrollbar.css);
 @import url(vegas.css);
 /* Google Fonts */
 @import url("http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700");
 @import url("https://fonts.googleapis.com/css?family=Raleway:300,400,500,700");
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,700");
-/*
-* http://meyerweb.com/eric/tools/css/reset/ 
-* v2.0 | 20110126
-* License: none (public domain)
-*/
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -122,22 +80,6 @@ table {
   margin: 0 auto;
 }
 #loading #preloader:after {
-  content: "SADAGE STORE";
-  /* Text under the circle */
-  position: absolute;
-  text-transform: uppercase;
-  font-size: 1.2rem;
-  font-weight: 700;
-  color: #FFFFFF;
-  letter-spacing: 0.2rem;
-  top: 3.5rem;
-  width: 100%;
-  left: 0;
-  right: 0;
-  height: 1px;
-  text-align: center;
-}
-#loading #preloader span {
   content: '- - -';
     font-family: 'Roboto Mono', monospace;
     font-size: 1.5em;
@@ -149,14 +91,27 @@ table {
     align-items: center;
     width: 100%;
     height: 100%;
-  -webkit-animation: animLoader 1s infinite alternate forwards;
-  -moz-animation: animLoader 1s infinite alternate forwards;
-  animation: animLoader 1s infinite alternate forwards;
-}
+    animation: animLoader 1s infinite alternate forwards;
+  }
 
-
-
-@-moz-keyframes animLoader {
+  @keyframes animLoader {
+    0% {
+      content: '- - -';
+    }
+    25% {
+      content: 'd - -';
+    }
+    50% {
+      content: '- - c';
+    }
+    75% {
+      content: '- / -';
+    }
+    100% {
+      content: 'd - c';
+    }
+  }
+  @-moz-keyframes animLoader {
     0% {
       -moz-content: '- - -';
     }
@@ -207,6 +162,7 @@ table {
       content: 'д - х';
     }
   }
+
 /* ------------------------------------- */
 /* 1. Generic styles ................... */
 /* ------------------------------------- */
@@ -470,20 +426,20 @@ sup {
 #home .content #subscribe p {
   font-weight: 400;
 }
-#home .content #subscribe #notifyMe {
+#home .content #subscribe #mc-embedded-subscribe-form {
   margin-top: 1rem;
 }
-#home .content #subscribe #notifyMe .form-group {
+#home .content #subscribe #mc-embedded-subscribe-form .mc-field-group {
   margin-bottom: 1em;
 }
-#home .content #subscribe #notifyMe .form-group .fa {
+#home .content #subscribe #mc-embedded-subscribe-form .mc-field-group .fa {
   color: #EFEFEF;
   position: absolute;
   text-align: center;
   top: 40%;
   left: -2rem;
 }
-#home .content #subscribe #notifyMe .form-group .form-control {
+#home .content #subscribe #mc-embedded-subscribe-form .mc-field-group .form-control {
   text-align: left;
   background: #FFFFFF;
   border: 1px solid #e2e4ed;
@@ -505,22 +461,22 @@ sup {
   -o-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
-#home .content #subscribe #notifyMe .form-group .form-control:hover, #home .content #subscribe #notifyMe .form-group .form-control:focus {
+#home .content #subscribe #mc-embedded-subscribe-form .mc-field-group .form-control:hover, #home .content #subscribe #mc-embedded-subscribe-form .form-group .form-control:focus {
   box-shadow: 0 0 0.3rem rgba(0, 0, 0, 0.2) inset;
 }
-#home .content #subscribe #notifyMe .form-group .form-control::-webkit-input-placeholder {
+#home .content #subscribe #mc-embedded-subscribe-form .mc-field-group .required::-webkit-input-placeholder {
   color: #999999 !important;
 }
-#home .content #subscribe #notifyMe .form-group .form-control::-moz-placeholder {
+#home .content #subscribe #mc-embedded-subscribe-form .mc-field-group .required::-moz-placeholder {
   color: #999999 !important;
 }
-#home .content #subscribe #notifyMe .form-group .form-control:-moz-placeholder {
+#home .content #subscribe #mc-embedded-subscribe-form .mc-field-group .required:-moz-placeholder {
   color: #999999 !important;
 }
-#home .content #subscribe #notifyMe .form-group .form-control:-ms-input-placeholder {
+#home .content #subscribe #mc-embedded-subscribe-form .mc-field-group .required:-ms-input-placeholder {
   color: #999999 !important;
 }
-#home .content #subscribe #notifyMe .form-group button.submit {
+#home .content #subscribe #mc-embedded-subscribe button.submit {
   padding: 1.3rem 3rem;
   font-size: 1.4rem;
   display: block;
@@ -543,7 +499,7 @@ sup {
   width: auto;
   float: left;
 }
-#home .content #subscribe #notifyMe .form-group button.submit:hover {
+#home .content #subscribe #mc-embedded-subscribe button.submit:hover {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3) inset;
   color: #FFFFFF;
 }
@@ -646,39 +602,6 @@ sup {
   color: #ff3366;
 }
 
-@-webkit-keyframes gradientor {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-@-moz-keyframes gradientor {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-@keyframes gradientor {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
 #vegas-background {
   position: fixed;
   top: 0;
